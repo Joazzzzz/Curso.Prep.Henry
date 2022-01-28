@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { numeroRandom } = require("../../02-JS-I/homework/homework")
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -87,14 +89,24 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero === 10 || numero === 5
+  if(numero === 10 || numero === 5) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20
+  if(numero < 50 && numero > 20) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function esEntero(numero) {
@@ -105,7 +117,12 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero % 1 === 0
+  if(numero % 1 === 0) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 function fizzBuzz(numero) {
@@ -149,7 +166,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if( numero < 2) return false;
+  if(numero < 2) return false;
   if(numero === 2) return true;
   for(var i = 2; i < numero; i++) {
     if(numero % i === 0) {
