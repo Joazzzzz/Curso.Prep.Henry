@@ -10,14 +10,15 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[array.lenght - 1]
+  const array = [1, 2, 3, 4]
+  return array[4]
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.lenght
+  return array.lenght;
 }
 
 
@@ -26,6 +27,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  const enteros = [1, 2, 3, 4, 5];
+  for (let i = 0; i < array.lenght; i++) {
+    enteros[i] = array[i] + 1
+  }
+  return enteros
 }
 
 
